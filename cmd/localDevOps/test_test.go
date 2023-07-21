@@ -20,12 +20,27 @@ func TestLocalDevOps(t *testing.T) {
 	).
 		// Passing the connection through environment var makes the code more organized
 		Ports("tcp", 8080, 8081, 8082, 8083).
-		ReplaceBeforeBuild("./Dockerfile", "./cmd/localDevOps/Dockerfile").
+		ReplaceBeforeBuild("./Dockerfile", "./cmd/localDevOps/Dockerfile-server").
 		//DockerfilePath("./cmd/localDevOps/Dockerfile").
 		// Wait for the container to run
 		WaitForFlagTimeout("Server started at", 10*time.Second).
 		FailFlag("./bug", "panic:").
 		Create("server", 3).
+		Start()
+
+	factory.NewContainerFromGit(
+		"proxy:latest",
+		"https://github.com/helmutkemper/flight.git",
+		//"./cmd/server",
+	).
+		// Passing the connection through environment var makes the code more organized
+		Ports("tcp", 9999, 9999).
+		ReplaceBeforeBuild("./Dockerfile", "./cmd/localDevOps/Dockerfile-proxy").
+		//DockerfilePath("./cmd/localDevOps/Dockerfile").
+		// Wait for the container to run
+		WaitForFlagTimeout("Starting proxy", 10*time.Second).
+		FailFlag("./bug", "panic:").
+		Create("proxy", 1).
 		Start()
 
 	if !primordial.Monitor(10 * time.Minute) {

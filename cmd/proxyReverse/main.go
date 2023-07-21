@@ -5,6 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"log"
@@ -81,6 +82,7 @@ func main() {
 	go ProxyRootConfig.VerifyDisabled()
 
 	http.HandleFunc("/", ProxyFunc)
+	fmt.Println("Starting proxy")
 	http.ListenAndServe(ProxyRootConfig.ListenAndServe, nil)
 }
 
