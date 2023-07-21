@@ -16,3 +16,12 @@ Output:
 
 ### cmd/benchmark
 
+benchmark from de code
+
+### cmd/localDevOps
+
+Framework para teste de falha. Ele sobe na máquina local um servidor proxy e três containers do servidor para fazer teste de falha,
+porém, por falta de tempo, o proxy reverço não funcionou no container.
+
+O proxy reverço é um projeto antigo que eu fiz para estudar go há uns 6 anos, https://github.com/helmutkemper/basicReverseProxy
+Eu simplesmente coloquei o código para funcionar.
