@@ -19,15 +19,9 @@ func TestLocalDevOps(t *testing.T) {
 		//"./cmd/server",
 	).
 		// Passing the connection through environment var makes the code more organized
-		EnvironmentVar(
-			[]string{
-				"SERVER_PORT=8081",
-				"SERVER_PORT=8082",
-				"SERVER_PORT=8083",
-			},
-		).
-		// Mount the dockerfile automatically
-		MakeDockerfile().
+		Ports("tcp", 8080, 8081, 8082, 8083).
+		ReplaceBeforeBuild("./Dockerfile", "./cmd/localDevOps/Dockerfile").
+		//DockerfilePath("./cmd/localDevOps/Dockerfile").
 		// Wait for the container to run
 		WaitForFlagTimeout("Server started at", 10*time.Second).
 		FailFlag("./bug", "panic:").
