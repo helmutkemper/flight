@@ -1,6 +1,6 @@
 module flights
 
-go 1.20
+go 1.18
 
 require github.com/helmutkemper/chaos v0.1.4
 
@@ -33,6 +33,4 @@ require (
 	golang.org/x/sys v0.7.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )

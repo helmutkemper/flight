@@ -13,9 +13,9 @@ func TestLocalDevOps(t *testing.T) {
 		Test(t, "./end")
 
 	// Container with test project archived in a local folder, "./mongodbClient"
-	factory.NewContainerFromFolder(
+	factory.NewContainerFromGit(
 		"server:latest",
-		"./server",
+		"https://github.com/helmutkemper/flight.git",
 		//"./cmd/server",
 	).
 		// Passing the connection through environment var makes the code more organized
