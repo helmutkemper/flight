@@ -704,6 +704,7 @@ func ProxyFunc(w http.ResponseWriter, r *http.Request) {
 	for keyRoute, route := range ProxyRootConfig.Routes {
 
 		log.Printf("route: %+v", route)
+		log.Printf("r: %+v", r)
 
 		handleName = route.Name
 
