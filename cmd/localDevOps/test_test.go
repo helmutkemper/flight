@@ -20,7 +20,7 @@ func TestLocalDevOps(t *testing.T) {
 	).
 		// Passing the connection through environment var makes the code more organized
 		Ports("tcp", 8080, 8081, 8082, 8083).
-		ReplaceBeforeBuild("./Dockerfile", "./cmd/localDevOps/Dockerfile-server").
+		ReplaceBeforeBuild("./Dockerfile", "./Dockerfile-server").
 		//DockerfilePath("./cmd/localDevOps/Dockerfile-server").
 		// Wait for the container to run
 		WaitForFlagTimeout("Server started at", 10*time.Second).
@@ -36,7 +36,7 @@ func TestLocalDevOps(t *testing.T) {
 	).
 		// Passing the connection through environment var makes the code more organized
 		Ports("tcp", 9999, 9999).
-		ReplaceBeforeBuild("./Dockerfile", "./cmd/localDevOps/Dockerfile-proxy").
+		ReplaceBeforeBuild("./Dockerfile", "./Dockerfile-proxy").
 		//DockerfilePath("./cmd/localDevOps/Dockerfile-proxy").
 		// Wait for the container to run
 		WaitForFlagTimeout("Starting", 30*time.Second).

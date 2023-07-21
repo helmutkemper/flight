@@ -26,6 +26,9 @@ production server.
 It was made to create all the necessary infrastructure for the microservice to work and then cause random failures, such 
 as stopping the container or simulating an overloaded network.
 
+This project will be create files in the local computer with security breach reports and resource consumption, such as 
+memory and cpu
+
 To learn more about him https://github.com/helmutkemper/chaos
 
 Project structure:
@@ -50,7 +53,8 @@ Project structure:
 	//
 ```
 
-This was the first time I did the reverse proxy chaos/failure test and found that it doesn't work in the container.
+This was the first time I did the reverse proxy chaos/failure test and I discover that it doesn't work in the container.
+However, this is a project made when I was learning Golang, about 6 years ago. (https://github.com/helmutkemper/basicReverseProxy)
 
 I know this is my fault, but somehow the chaos/failure test did its job in detecting the problem.
 
