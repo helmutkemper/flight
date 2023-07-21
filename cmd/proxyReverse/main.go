@@ -70,6 +70,19 @@ func main() {
 						Name: "docker 3 - ok",
 						Url:  "http://delete_server_2:8083",
 					},
+
+					{
+						Name: "docker 1 - ok",
+						Url:  "http://10.0.0.1:8081",
+					},
+					{
+						Name: "docker 2 - ok",
+						Url:  "http://10.0.0.2:8082",
+					},
+					{
+						Name: "docker 3 - ok",
+						Url:  "http://10.0.0.3:8083",
+					},
 				},
 				Path: ProxyPath{
 					Path:   "/calculate",
