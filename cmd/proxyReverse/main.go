@@ -714,7 +714,7 @@ func ProxyFunc(w http.ResponseWriter, r *http.Request) {
 		}
 
 		if r.Host != route.Domain.SubDomain+route.Domain.Domain+route.Domain.Port {
-			continue
+			//continue
 		}
 
 		// O domínio foi encontrado
