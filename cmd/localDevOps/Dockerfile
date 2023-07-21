@@ -3,7 +3,7 @@ FROM golang:1.18 as builder
 RUN mkdir /app
 RUN chmod 700 /app
 
-RUN git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+#RUN git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 RUN git clone -b main https://github.com/helmutkemper/flight.git /app
 
 WORKDIR /app
