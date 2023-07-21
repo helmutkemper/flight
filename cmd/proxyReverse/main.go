@@ -53,7 +53,7 @@ func main() {
 				Name: "blog",
 				Domain: ProxyDomain{
 					SubDomain: "",
-					Domain:    "localhost",
+					Domain:    "0.0.0.0",
 					Port:      "9999",
 				},
 				ProxyEnable: true,
