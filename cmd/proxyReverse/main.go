@@ -60,15 +60,15 @@ func main() {
 				ProxyServers: []ProxyUrl{
 					{
 						Name: "docker 1 - ok",
-						Url:  "http://0.0.0.0:8081",
+						Url:  "http://delete_server_0:8081",
 					},
 					{
-						Name: "docker 2 - error",
-						Url:  "http://0.0.0.0:8082",
+						Name: "docker 2 - ok",
+						Url:  "http://delete_server_1:8082",
 					},
 					{
-						Name: "docker 3 - error",
-						Url:  "http://0.0.0.0:8083",
+						Name: "docker 3 - ok",
+						Url:  "http://delete_server_2:8083",
 					},
 				},
 				Path: ProxyPath{
