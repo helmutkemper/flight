@@ -50,7 +50,7 @@ func main() {
 		TimeToVerifyDisabled:       time.Second * 30,
 		Routes: []ProxyRoute{
 			{
-				Name: "blog",
+				Name: "flight",
 				Domain: ProxyDomain{
 					SubDomain: "",
 					Domain:    "0.0.0.0",
