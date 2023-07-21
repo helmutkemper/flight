@@ -25,6 +25,7 @@ func TestLocalDevOps(t *testing.T) {
 		// Wait for the container to run
 		WaitForFlagTimeout("Server started at", 10*time.Second).
 		FailFlag("./bug", "panic:").
+		EnableChaos(1, 1, 1).
 		Create("server", 3).
 		Start()
 
@@ -43,7 +44,7 @@ func TestLocalDevOps(t *testing.T) {
 		Create("proxy", 1).
 		Start()
 
-	if !primordial.Monitor(10 * time.Minute) {
-		//t.Fail()
+	if !primordial.Monitor(20 * time.Minute) {
+		t.Fail()
 	}
 }

@@ -729,8 +729,12 @@ func ProxyFunc(w http.ResponseWriter, r *http.Request) {
 	// Trata todas as rotas
 	for keyRoute, route := range ProxyRootConfig.Routes {
 
-		log.Printf("route: %+v", route)
-		log.Printf("r: %+v", r)
+		log.Printf("route.Path.Path: %+v", route.Path.Path)
+		log.Printf("r.URL.Path: %+v", r.URL.Path)
+		log.Printf("route.Domain.Domain: %+v", route.Domain.Domain)
+		log.Printf("r.Host: %+v", r.Host)
+
+		//route.Path.Method == "" || route.Path.Method == r.Method) && (route.Path.Path == r.URL.Path || route.Path.Path == ""
 
 		handleName = route.Name
 
