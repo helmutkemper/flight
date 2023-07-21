@@ -9,9 +9,9 @@ WORKDIR /app
 
 ARG CGO_ENABLED=0
 #RUN go mod tidy
-RUN go build -o /app/main /app/cmd/server/main.go
+RUN go build -o /app/main /app/cmd/proxyReverse/main.go
 
-EXPOSE 8080
+EXPOSE 9999
 
 CMD ["/app/main"]
 
