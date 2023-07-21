@@ -1,0 +1,161 @@
+[
+  {
+    "src": "GIG",
+    "dst": "LHR",
+    "connections": 1,
+    "airports": ["GIG", "CDG", "LHR"]
+  },
+  {
+    "src": "GRU",
+    "dst": "JFK",
+    "connections": 0,
+    "airports": ["GRU", "JFK"]
+  },
+  {
+    "src": "SCL",
+    "dst": "SYD",
+    "connections": 2,
+    "airports": ["SCL", "LAX", "HNL", "SYD"]
+  },
+  {
+    "src": "BUE",
+    "dst": "TYO",
+    "connections": 3,
+    "airports": ["BUE", "MIA", "LIS", "DXB", "TYO"]
+  },
+  {
+    "src": "BOG",
+    "dst": "PEK",
+    "connections": 4,
+    "airports": ["BOG", "MEX", "AMS", "IST", "BKK", "PEK"]
+  },
+  {
+    "src": "RIO",
+    "dst": "PAR",
+    "connections": 0,
+    "airports": ["RIO","PAR"]
+  },
+  {
+    "src": "SAO",
+    "dst": "NYC",
+    "connections": 1,
+    "airports": ["SAO","ATL","NYC"]
+  },
+  {
+    "src": "LON",
+    "dst": "SIN",
+    "connections": 2,
+    "airports": ["LON","DXB","KUL","SIN"]
+  },
+  {
+    "src": "MAD",
+    "dst": "HKG",
+    "connections": 3,
+    "airports": ["MAD","FRA","DEL","BKK","HKG"]
+  },
+  {
+    "src": "MOS",
+    "dst": "LAX",
+    "connections": 4,
+    "airports": ["MOS","HEL","CPH","YYZ","DEN","LAX"]
+  },
+  {
+    "src": "SYD",
+    "dst": "CAI",
+    "connections": 5,
+    "airports": ["SYD","PER","JNB","ADD","IST","ATH","CAI"]
+  },
+  {
+    "src": "AKL",
+    "dst": "MEX",
+    "connections": 6,
+    "airports": ["AKL","NAN","HNL","SFO","IAH","PTY","BOG","MEX"]
+  },
+  {
+    "src": "BER",
+    "dst": "TYO",
+    "connections": 7,
+    "airports": ["BER","WAW","VIE","TLV","BOM","HKG","TPE","TYO"
+    ]
+  },
+  {
+    "src": "BKK",
+    "dst": "SFO",
+    "connections": 8,
+    "airports": ["BKK","CMB","MCT","DMM","AMM","FRA","DUB","BOS","SFO"
+    ]
+  },
+  {
+    "src": "CPT",
+    "dst": "PEK",
+    "connections": 9,
+    "airports": ["CPT","DUR","LUN","NBO","DAR","DOH","TBS","ALA","TSE","PEK"
+    ]
+  },
+  {
+    "src": "DUB",
+    "dst": "EZE",
+    "connections": 10,
+    "airports": ["DUB","LHR","GVA","MXP","NCE","MAD","LIM","SCL","AEP","EZE"]
+  },
+  {
+    "src": "EWR",
+    "dst": "CNS",
+    "connections": 11,
+    "airports": ["EWR","MIA","GIG","EZE","SCL","PPT","AUK","WLG","MEL","BNE","CNS"]
+  },
+  {
+    "src": "FRA",
+    "dst": "LIM",
+    "connections": 12,
+    "airports": ["FRA","MUC","WAW","SVO","TAS","BKK","HAN","NRT","HNL","LAX","MEX","LIM"]
+  },
+  {
+    "src": "GIG",
+    "dst": "MEL",
+    "connections": 13,
+    "airports": ["GIG","LIS","FNC","CAS","DSS","NIM","LAD","CPT","MRE","NBO","SIN","DPS","MEL"]
+  },
+  {
+    "src": "HKG",
+    "dst": "DUB",
+    "connections": 14,
+    "airports": ["HKG","CAN","KMG","CTU","ULN","ALA","TSE","LED","CPH","AMS","BRU","CDG","LHR","DUB"]
+  },
+  {
+    "src": "IST",
+    "dst": "BUE",
+    "connections": 15,
+    "airports": ["IST","SOF","BUD","MUC","ZRH","MAD","LIS","FNC","SID","GIG","EZE","COR","LIM","SCL","BUE"]
+  },
+  {
+    "src": "JFK",
+    "dst": "MNL",
+    "connections": 16,
+    "airports": ["JFK","WAS","MIA","HAV","CUN","MEX","GUA","SJO","LIM","SCL","AUK","NAN","BNE","CNS","DPS","MNL"]
+  },
+  {
+    "src": "KUL",
+    "dst": "YVR",
+    "connections": 17,
+    "airports": ["KUL","PEN","SIN","CMB","MCT","DMM","DUB","FRA","WAW","SVO","TAS","BKK","HKG","TPE","NRT","HNL","LAX","YVR"]
+  },
+  {
+    "src": "LAX",
+    "dst": "CPT",
+    "connections": 18,
+    "airports": ["LAX","SFO","PDX","SEA","YVR","NRT","PVG","BKK","CMB","MCT","NBO","DAR","LUN","GAB","WVB","CPT"]
+  },
+  {
+    "src": "MEL",
+    "dst": "MAD",
+    "connections": 19,
+    "airports": ["MEL","SYD","BNE","CNS","NAN","HNL","LAX","MEX","CUN","HAV","MIA","WAS","JFK","LHR","CDG","BRU","AMS","FRA","MAD"]
+  },
+  {
+    "src": "NRT",
+    "dst": "GRU",
+    "connections": 20,
+    "airports": ["NRT","PVG","DEL","DXB","CAI","ATH","FCO","ZRH","MUC","VIE","PRG","WAW","SVO","LED","CPH","AMS","LHR","LIS","FNC","SID","GRU"]
+  }
+]
